@@ -13,3 +13,12 @@
 .line-height-custom {
   line-height: 60px;
 }
+
+.hero-overlay-custom {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.546);
+  --tw-bg-opacity: 0.5;
+}

@@ -1,111 +1,68 @@
-import { Collapse, initTE } from "tw-elements";
 import logo from "../assets/icons/300.png";
 import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
-  initTE({ Collapse });
-
   return (
-    <>
-      {/* Main navigation container */}
-      <nav
-        className="fixed top-0 z-50 flex w-full flex-nowrap items-center justify-between bg-white py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
-        data-te-navbar-ref=""
-      >
-        <div className="flex w-full mx-auto max-w-screen-xl flex-wrap items-center justify-between px-3">
-          {/* Hamburger button for mobile view */}
-          <Link className="pr-2 block lg:hidden" to="/">
+    <nav className="bg-white sticky top-0 z-50">
+      <div className="navbar mx-auto max-w-7xl">
+        <div className="navbar-start">
+          <Link to="/" className="">
             <img src={logo} className="w-20" alt="" />
           </Link>
-          <button
-            className="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-            type="button"
-            data-te-collapse-init=""
-            data-te-target="#navbarSupportedContent3"
-            aria-controls="navbarSupportedContent3"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            {/* Hamburger icon */}
-            <span className="[&>svg]:w-7">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="h-7 w-7"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </span>
-          </button>
-          {/* Collapsible navbar container */}
-          <div
-            className="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-            id="navbarSupportedContent3"
-            data-te-collapse-item=""
-          >
-            {/* Navbar title */}
-            <Link className="pr-2 hidden lg:block" to="/">
-              <img src={logo} className="w-20" alt="" />
-            </Link>
-            {/* Left links */}
-            <ul
-              className="list-style-none ml-auto flex flex-col pl-0 lg:flex-row"
-              data-te-navbar-nav-ref=""
-            >
-              {/* Home link */}
-              <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <Link
-                  className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  aria-current="page"
-                  to="/home"
-                  data-te-nav-link-ref=""
-                >
-                  Home
-                </Link>
-              </li>
-              {/* About link */}
-              <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <Link
-                  className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  aria-current="page"
-                  to="/about-us"
-                  data-te-nav-link-ref=""
-                >
-                  About
-                </Link>
-              </li>
-              {/* Properties link */}
-              <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <Link
-                  className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  aria-current="page"
-                  to="/properties"
-                  data-te-nav-link-ref=""
-                >
-                  Properties
-                </Link>
-              </li>
-              {/* Contact link */}
-              <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <Link
-                  className="active disabled:text-black/30 lg:pl-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  aria-current="page"
-                  to="/contact-us"
-                  data-te-nav-link-ref=""
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-    </>
+        <div className="navbar-end hidden lg:flex">
+          <ul className="menu menu-horizontal ">
+            <li className="mx-2">
+              <Link to="/home">Home</Link>
+            </li>
+            <li className="mx-2">
+              <Link to="/about-us">About</Link>
+            </li>
+            <li className="mx-2">
+              <Link to="/properties">Properties</Link>
+            </li>
+            <li className="mx-2">
+              <Link to="/contact-us">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="dropdown dropdown-end ml-auto">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-compact dropdown-content mt-5 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li className="mx-2">
+              <Link to="/home">Home</Link>
+            </li>
+            <li className="mx-2">
+              <Link to="/about-us">About</Link>
+            </li>
+            <li className="mx-2">
+              <Link to="/properties">Properties</Link>
+            </li>
+            <li className="mx-2">
+              <Link to="/contact-us">Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
