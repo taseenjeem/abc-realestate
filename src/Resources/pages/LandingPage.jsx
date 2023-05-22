@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <section className="">
       <HeroCarousel />
-      <div>
+      <div className="mx-auto max-w-7xl">
         <IntroHero />
       </div>
     </section>

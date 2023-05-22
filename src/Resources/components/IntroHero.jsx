@@ -2,17 +2,28 @@ import image from "../assets/images/10.webp";
 
 const IntroHero = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
+        <img src={image} className="md:max-w-xl rounded-lg shadow-2xl" />
         <div>
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <h1
+            className="md:text-4xl text-2xl mt-6 md:mt-0 font-bold md:leading-normal"
+            style={{ fontFamily: "Alata" }}
+          >
+            Residential and Commercial Lands for sale in Al Bahia project,
+            Ajman, UAE
+          </h1>
+          <p className="py-6 lg:leading-loose">
+            ABC Real Estate Company is pleased to present this property to the
+            Ajman real estate market. The lands are located on Sheikh Mohammed
+            bin Rashid Al Maktoum Street directly leading to the Ajman China
+            Mall – and leading to Sheikh Mohammed bin Zayed Street. Residential
+            plot areas start from 160m² up to 540 m². The project consists of 46
+            commercial land – 844 residential land in addition to services.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary capitalize">
+            View All Properties
+          </button>
         </div>
       </div>
     </div>
