@@ -10,7 +10,7 @@ const NavigationBar = () => {
     <>
       {/* Main navigation container */}
       <nav
-        className="relative flex w-full flex-nowrap items-center justify-between bg-neutral-100 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+        className="fixed top-0 z-50 flex w-full flex-nowrap items-center justify-between bg-white py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
         data-te-navbar-ref=""
       >
         <div className="flex w-full mx-auto max-w-screen-xl flex-wrap items-center justify-between px-3">
