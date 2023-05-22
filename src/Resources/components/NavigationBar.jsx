@@ -61,7 +61,7 @@ const NavigationBar = () => {
               {/* Home link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
                 <a
-                  className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
                   href="#"
                   data-te-nav-link-ref=""
@@ -72,7 +72,7 @@ const NavigationBar = () => {
               {/* About link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
                 <a
-                  className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
                   href="#"
                   data-te-nav-link-ref=""
@@ -83,7 +83,7 @@ const NavigationBar = () => {
               {/* Properties link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
                 <a
-                  className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
                   href="#"
                   data-te-nav-link-ref=""
@@ -94,7 +94,7 @@ const NavigationBar = () => {
               {/* Contact link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
                 <a
-                  className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  className="active disabled:text-black/30 lg:pl-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
                   href="#"
                   data-te-nav-link-ref=""
