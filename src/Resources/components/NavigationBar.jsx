@@ -63,6 +63,7 @@ const NavigationBar = () => {
                   className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
                   to="/home"
+                  data-te-nav-link-ref=""
                 >
                   Home
                 </Link>

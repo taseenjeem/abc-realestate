@@ -1,0 +1,15 @@
+.carousel-img-1 {
+  background-image: url("../assets/images/01.jpg");
+}
+.carousel-img-2 {
+  background-image: url("../assets/images/02.jpg");
+}
+.carousel-img-3 {
+  background-image: url("../assets/images/03.jpg");
+}
+.carousel-img-4 {
+  background-image: url("../assets/images/04.jpg");
+}
+.line-height-custom {
+  line-height: 60px;
+}
