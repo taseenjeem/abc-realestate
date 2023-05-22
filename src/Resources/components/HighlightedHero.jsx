@@ -1,5 +1,11 @@
 import image from "../assets/images/13.webp";
 import "../CSS/HighligtedHero.css";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { TiPointOfInterestOutline } from "react-icons/ti";
 
 const HighlightedHero = () => {
   return (
@@ -23,7 +29,7 @@ const HighlightedHero = () => {
             }}
           >
             <h1
-              className="text-3xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12 loose-spacing "
+              className="text-3xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12 loose-spacing"
               style={{ fontFamily: "Alata" }}
             >
               Highlighted Points of the
@@ -32,6 +38,108 @@ const HighlightedHero = () => {
             </h1>
           </div>
         </div>
+      </div>
+
+      <div>
+        <VerticalTimeline lineColor="black">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>
+              The land has a complete infrastructure, including streets,
+              asphalt, electricity, water, etc.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>
+              Building with a system of separate villas (permit: ground + 2).
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>An area of 160, 264, 274, and 284 square meters.</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>
+              Purchase directly from the developer, without commission, without
+              mediation.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>
+              Freehold for all Nationalities, Tax-Free, No Commission. Green
+              spaces are available.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>
+              With the best competitive price never offered before in Ajman.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>Adjacent to a fully occupied Residential community in Ajman.</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>Easy access to Sheikh Mohammed Bin Zayed Road.</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(75, 107, 251)" }}
+            iconStyle={{ background: "rgb(75, 107, 251)", color: "#fff" }}
+            icon={<TiPointOfInterestOutline />}
+          >
+            <p>
+              All services (streets, asphalt, electricity, water, etc.) are
+              available
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
       </div>
     </section>
   );
