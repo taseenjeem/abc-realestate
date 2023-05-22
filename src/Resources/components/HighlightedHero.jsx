@@ -9,7 +9,7 @@ import { TiPointOfInterestOutline } from "react-icons/ti";
 
 const HighlightedHero = () => {
   return (
-    <section className="min-h-screen mb-96">
+    <section className="min-h-screen">
       <div
         className="relative overflow-hidden bg-no-repeat bg-cover"
         style={{

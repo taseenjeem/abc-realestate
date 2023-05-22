@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-lg">
+    <nav className="bg-white fixed w-full top-0 z-50 shadow-lg">
       <div className="navbar mx-auto max-w-7xl">
         <div className="navbar-start">
           <Link to="/" className="">
@@ -21,7 +21,7 @@ const NavigationBar = () => {
             <li className="mx-2">
               <Link to="/properties">Properties</Link>
             </li>
-            <li className="mx-2">
+            <li className="ml-2">
               <Link to="/contact-us">Contact</Link>
             </li>
           </ul>
