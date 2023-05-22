@@ -1,19 +1,21 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import NavigationBar from "./Resources/components/NavigationBar";
 import LandingPage from "./Resources/pages/LandingPage";
+import About from "./Resources/pages/About";
+import Properties from "./Resources/pages/Properties";
+import Contact from "./Resources/pages/Contact";
 
 function App() {
-  // React-Routes Implement Starts
-  const router = createBrowserRouter([
-    { path: "/", element: <LandingPage /> },
-    { path: "/home", element: <LandingPage /> },
-  ]);
-  // React-Routes Implement Ends
   return (
     <>
       <NavigationBar />
-      {/* Apply the routes bellow */}
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<LandingPage />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/properties" element={<Properties />} />
+        <Route path="/contact-us" element={<Contact />} />
+      </Routes>
     </>
   );
 }

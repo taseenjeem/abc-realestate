@@ -1,10 +1,9 @@
-import { useEffect } from "react";
 import { Collapse, initTE } from "tw-elements";
+import logo from "../assets/icons/300.png";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
-  useEffect(() => {
-    initTE({ Collapse });
-  }, []);
+  initTE({ Collapse });
 
   return (
     <>
@@ -15,6 +14,9 @@ const NavigationBar = () => {
       >
         <div className="flex w-full mx-auto max-w-screen-xl flex-wrap items-center justify-between px-3">
           {/* Hamburger button for mobile view */}
+          <Link className="pr-2 block lg:hidden" to="/">
+            <img src={logo} className="w-20" alt="" />
+          </Link>
           <button
             className="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
             type="button"
@@ -47,12 +49,9 @@ const NavigationBar = () => {
             data-te-collapse-item=""
           >
             {/* Navbar title */}
-            <a
-              className="pr-2 text-xl text-black dark:text-neutral-200"
-              href="#"
-            >
-              Navbar
-            </a>
+            <Link className="pr-2 hidden lg:block" to="/">
+              <img src={logo} className="w-20" alt="" />
+            </Link>
             {/* Left links */}
             <ul
               className="list-style-none ml-auto flex flex-col pl-0 lg:flex-row"
@@ -60,47 +59,46 @@ const NavigationBar = () => {
             >
               {/* Home link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <a
+                <Link
                   className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
-                  href="#"
-                  data-te-nav-link-ref=""
+                  to="/home"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               {/* About link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <a
+                <Link
                   className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
-                  href="#"
+                  to="/about-us"
                   data-te-nav-link-ref=""
                 >
                   About
-                </a>
+                </Link>
               </li>
               {/* Properties link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <a
+                <Link
                   className="active disabled:text-black/30 lg:px-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
-                  href="#"
+                  to="/properties"
                   data-te-nav-link-ref=""
                 >
                   Properties
-                </a>
+                </Link>
               </li>
               {/* Contact link */}
               <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref="">
-                <a
+                <Link
                   className="active disabled:text-black/30 lg:pl-4 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
-                  href="#"
+                  to="/contact-us"
                   data-te-nav-link-ref=""
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
