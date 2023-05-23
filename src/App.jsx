@@ -5,6 +5,7 @@ import LandingPage from "./Resources/pages/LandingPage";
 import About from "./Resources/pages/About";
 import Properties from "./Resources/pages/Properties";
 import Contact from "./Resources/pages/Contact";
+import Footer from "./Resources/components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/properties" element={<Properties />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
+      <Footer />
     </section>
   );
 }
