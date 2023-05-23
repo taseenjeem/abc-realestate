@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import image from "../assets/images/10.webp";
+import { ImArrowRight2 } from "react-icons/im";
 
 const IntroHero = () => {
   return (
@@ -21,9 +23,9 @@ const IntroHero = () => {
             plot areas start from 160m² up to 540 m². The project consists of 46
             commercial land – 844 residential land in addition to services.
           </p>
-          <button className="btn btn-primary capitalize">
-            View All Properties
-          </button>
+          <Link to="/properties" className="btn btn-primary capitalize">
+            View All Properties <ImArrowRight2 className="ml-2" />
+          </Link>
         </div>
       </div>
     </div>

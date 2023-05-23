@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../assets/images/01.webp";
 import img2 from "../assets/images/02.webp";
 import img3 from "../assets/images/03.webp";
@@ -265,9 +266,12 @@ const AvailableProperties = () => {
       </div>
 
       <div className="card-actions justify-center mt-20">
-        <button className="btn btn-primary text-white capitalize">
+        <Link
+          to="/properties"
+          className="btn btn-primary text-white capitalize"
+        >
           View all properties <ImArrowRight2 className="ml-2" />
-        </button>
+        </Link>
       </div>
     </section>
   );
