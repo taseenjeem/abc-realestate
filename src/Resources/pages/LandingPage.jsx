@@ -1,3 +1,4 @@
+import AboutService from "../components/AboutService";
 import AvailableProperties from "../components/AvailableProperties";
 import GuideTour from "../components/GuideTour";
 import HeroCarousel from "../components/HeroCarousel";
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <GuideTour />
         <Team />
       </div>
+      <AboutService />
     </section>
   );
 };
