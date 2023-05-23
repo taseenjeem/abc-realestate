@@ -1,5 +1,11 @@
+import WhoWeAre from "../components/WhoWeAre";
+
 const About = () => {
-  return <div></div>;
+  return (
+    <div>
+      <WhoWeAre />
+    </div>
+  );
 };
 
 export default About;
