@@ -23,7 +23,7 @@ const GuideTour = () => {
       </h1>
 
       <div className="grid lg:grid-cols-2">
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 shadow-2xl">
+        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
           <figure className="px-10 pt-10">
             <img src={img1} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -54,7 +54,7 @@ const GuideTour = () => {
           </div>
         </div>
 
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 shadow-2xl">
+        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
           <figure className="px-10 pt-10">
             <img src={img2} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -63,8 +63,8 @@ const GuideTour = () => {
               className="text-2xl font-semibold text-gray-800 text-center"
               style={{ fontFamily: "Alata" }}
             >
-              Residential villa plot in the fat-developing area of Al Bahia at a
-              reasonable price
+              Residential villa plot in the fast-developing area of Al Bahia at
+              a reasonable price
             </h2>
             <div className="card-actions justify-center mt-5">
               <button
@@ -86,7 +86,7 @@ const GuideTour = () => {
           </div>
         </div>
 
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 shadow-2xl">
+        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
           <figure className="px-10 pt-10">
             <img src={img3} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -117,7 +117,7 @@ const GuideTour = () => {
           </div>
         </div>
 
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 shadow-2xl">
+        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
           <figure className="px-10 pt-10">
             <img src={img4} alt="Shoes" className="rounded-xl" />
           </figure>

@@ -3,6 +3,7 @@ import GuideTour from "../components/GuideTour";
 import HeroCarousel from "../components/HeroCarousel";
 import HighlightedHero from "../components/HighlightedHero";
 import IntroHero from "../components/IntroHero";
+import Team from "../components/Team";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
         <HighlightedHero />
         <AvailableProperties />
         <GuideTour />
+        <Team />
       </div>
     </section>
   );

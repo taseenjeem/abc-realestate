@@ -17,7 +17,7 @@ const AvailableProperties = () => {
       </h1>
 
       <div className="grid lg:grid-cols-2">
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 shadow-2xl">
+        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
           <figure>
             <img src={img1} alt="Shoes" />
           </figure>
@@ -79,7 +79,7 @@ const AvailableProperties = () => {
           </div>
         </div>
 
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 shadow-2xl">
+        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
           <figure>
             <img src={img2} alt="Shoes" />
           </figure>
@@ -88,8 +88,8 @@ const AvailableProperties = () => {
               className="text-2xl font-semibold text-gray-800 text-center"
               style={{ fontFamily: "Alata" }}
             >
-              Residential villa plot in the fat-developing area of Al Bahia at a
-              reasonable price
+              Residential villa plot in the fast-developing area of Al Bahia at
+              a reasonable price
             </h2>
             <div className="divider"></div>
             <div className="">
@@ -141,7 +141,7 @@ const AvailableProperties = () => {
           </div>
         </div>
 
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 shadow-2xl">
+        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
           <figure>
             <img src={img3} alt="Shoes" />
           </figure>
@@ -202,7 +202,7 @@ const AvailableProperties = () => {
           </div>
         </div>
 
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 shadow-2xl">
+        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
           <figure>
             <img src={img4} alt="Shoes" />
           </figure>
