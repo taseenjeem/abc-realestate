@@ -4,6 +4,7 @@
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 a.active {
   background-color: #0b37fa;

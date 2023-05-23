@@ -7,6 +7,7 @@ import Properties from "./Resources/pages/Properties";
 import Contact from "./Resources/pages/Contact";
 import Footer from "./Resources/components/Footer";
 import whatsappicon from "./Resources/assets/icons/whatsapp.png";
+import ScrollToTop from "./Resources/Hooks/ScrollToTop";
 
 function App() {
   return (
@@ -22,13 +23,15 @@ function App() {
         />
       </a>
       <NavigationBar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<LandingPage />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/properties" element={<Properties />} />
-        <Route path="/contact-us" element={<Contact />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<LandingPage />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/properties" element={<Properties />} />
+          <Route path="/contact-us" element={<Contact />} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </section>
   );
