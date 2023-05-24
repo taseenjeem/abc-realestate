@@ -1,5 +1,6 @@
 import { ImArrowRight2 } from "react-icons/im";
 import bg from "../assets/images/service-min.jpg";
+import { Link } from "react-router-dom";
 
 const AboutService = () => {
   return (
@@ -29,9 +30,12 @@ const AboutService = () => {
             that they achieve their real estate goals with ease and convenience.
           </p>
           <div className="card-actions mt-5">
-            <button className="btn btn-neutral text-white capitalize">
+            <Link
+              to="/contact-us"
+              className="btn btn-neutral text-white capitalize"
+            >
               Get Consultancy <ImArrowRight2 className="ml-2" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

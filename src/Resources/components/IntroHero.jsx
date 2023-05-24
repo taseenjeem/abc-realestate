@@ -23,7 +23,10 @@ const IntroHero = () => {
             plot areas start from 160m² up to 540 m². The project consists of 46
             commercial land – 844 residential land in addition to services.
           </p>
-          <Link to="/properties" className="btn btn-primary capitalize">
+          <Link
+            to="/properties"
+            className="btn btn-primary text-white capitalize"
+          >
             View All Properties <ImArrowRight2 className="ml-2" />
           </Link>
         </div>
