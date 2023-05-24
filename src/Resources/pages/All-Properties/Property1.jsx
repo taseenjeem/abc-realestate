@@ -203,7 +203,7 @@ const Property1 = () => {
 
       <div className="hero my-24">
         <div className="hero-content gap-10 flex-col lg:flex-row">
-          <img src={property1} className="max-w-2xl rounded-lg shadow-2xl" />
+          <img src={property1} className="lg:max-w-2xl rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-5xl font-bold" style={{ fontFamily: "Alata" }}>
               Watch Video!
