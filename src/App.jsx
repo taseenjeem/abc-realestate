@@ -8,6 +8,7 @@ import Contact from "./Resources/pages/Contact";
 import Footer from "./Resources/components/Footer";
 import whatsappicon from "./Resources/assets/icons/whatsapp.png";
 import ScrollToTop from "./Resources/Hooks/ScrollToTop";
+import Property1 from "./Resources/pages/All-Properties/Property1";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/properties" element={<Properties />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route
+            path="/properties-buy-townhouse-land-with-a-down-payment-and-build-a-house"
+            element={<Property1 />}
+          />
         </Routes>
       </ScrollToTop>
       <Footer />

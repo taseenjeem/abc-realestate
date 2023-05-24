@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../assets/images/01.webp";
 import img2 from "../assets/images/02.webp";
 import img3 from "../assets/images/03.webp";
@@ -72,9 +73,12 @@ const Properties = () => {
               </div>
             </div>
             <div className="card-actions justify-center mt-10">
-              <button className="btn btn-primary text-white w-full capitalize">
+              <Link
+                to="/properties-buy-townhouse-land-with-a-down-payment-and-build-a-house"
+                className="btn btn-primary text-white w-full capitalize"
+              >
                 Learn More <ImArrowRight2 className="ml-2" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
