@@ -1,15 +1,15 @@
 import { ImPriceTags } from "react-icons/im";
-import property1 from "../../assets/images/01.webp";
+import property1 from "../../assets/images/02.webp";
 import { MdCategory } from "react-icons/md";
 import { RiPieChart2Fill, RiCheckboxCircleFill } from "react-icons/ri";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
-import img1 from "../../assets/images/Property1/05.webp";
-import img2 from "../../assets/images/Property1/07.webp";
-import img3 from "../../assets/images/Property1/11.webp";
-import img4 from "../../assets/images/Property1/12.webp";
-import img5 from "../../assets/images/Property1/16.webp";
-import img6 from "../../assets/images/Property1/17.webp";
+import img1 from "../../assets/images/Property2/02.webp";
+import img2 from "../../assets/images/Property2/12.webp";
+import img3 from "../../assets/images/Property2/13.webp";
+import img4 from "../../assets/images/Property2/14.webp";
+import img5 from "../../assets/images/Property2/15.webp";
+import img6 from "../../assets/images/Property2/16.webp";
 import { FaRegPlayCircle } from "react-icons/fa";
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
@@ -42,7 +42,7 @@ const images = [
   },
 ];
 
-const Property1 = () => {
+const Property2 = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -63,8 +63,8 @@ const Property1 = () => {
               Property Information
             </h1>
             <p className="">
-              Best deal to buy townhouse land with a down payment and build a
-              house
+              Residential villa plot in the fast-developing area of Al Bahia at
+              a reasonable price
             </p>
             <div className="divider"></div>
             <div>
@@ -78,7 +78,7 @@ const Property1 = () => {
                     price
                   </span>
                   <br />
-                  AED 5,30,000
+                  AED 5,00,000
                 </div>
                 <div className="text-center">
                   <span
@@ -102,7 +102,7 @@ const Property1 = () => {
                     Area
                   </span>
                   <br />
-                  284 sm / 3045.60 sqft / 4.23 Katha
+                  264 sm / 2836.80 sqft / 4.04 Katha
                 </p>
               </div>
             </div>
@@ -110,9 +110,9 @@ const Property1 = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 lg:px-0 my-10 ">
+      <div className="mx-auto max-w-7xl px-4 lg:px-0 my-10">
         <h1
-          className="text-center lg:text-7xl text-5xl font-semibold mt-20 mb-16 text-gray-800"
+          className="text-center lg:text-7xl text-5xl font-semibold mt-20 mb-14 text-gray-800"
           style={{ fontFamily: "Alata" }}
         >
           Best <span className="text-primary">Deal</span>
@@ -188,9 +188,62 @@ const Property1 = () => {
         </div>
       </div>
 
+      <div className="mx-auto max-w-7xl px-4 lg:px-0 mb-40 mt-28">
+        <h1
+          className="text-center lg:text-7xl text-5xl font-semibold mb-6 text-gray-800"
+          style={{ fontFamily: "Alata" }}
+        >
+          In 6 mos. <span className="text-primary">Payment Plan</span>
+        </h1>
+        <h2
+          className="text-center text-2xl font-semibold mb-11"
+          style={{ fontFamily: "Alata" }}
+        >
+          No transfer fee
+        </h2>
+        <div className="grid lg:grid-cols-3 lg:gap-10 gap-7">
+          <div className="bg-primary border rounded shadow-lg mx-auto w-full p-4">
+            <p className="text-lg text-white w-full">
+              <RiCheckboxCircleFill className="inline text-white text-2xl relative bottom-[2px] mr-2" />{" "}
+              Downpayment: AED 1,00,000
+            </p>
+          </div>
+          <div className="bg-primary border rounded shadow-lg mx-auto w-full p-4">
+            <p className="text-lg text-white w-full">
+              <RiCheckboxCircleFill className="inline text-white text-2xl relative bottom-[2px] mr-2" />{" "}
+              60 days from DP: AED 75,000
+            </p>
+          </div>
+          <div className="bg-primary border rounded shadow-lg mx-auto w-full p-4">
+            <p className="text-lg text-white w-full">
+              <RiCheckboxCircleFill className="inline text-white text-2xl relative bottom-[2px] mr-2" />{" "}
+              90 days . . . AED 75,000
+            </p>
+          </div>
+          <div className="bg-primary border rounded shadow-lg mx-auto w-full p-4">
+            <p className="text-lg text-white w-full">
+              <RiCheckboxCircleFill className="inline text-white text-2xl relative bottom-[2px] mr-2" />{" "}
+              120 days . . . AED 75,000
+            </p>
+          </div>
+          <div className="bg-primary border rounded shadow-lg mx-auto w-full p-4">
+            <p className="text-lg text-white w-full">
+              <RiCheckboxCircleFill className="inline text-white text-2xl relative bottom-[2px] mr-2" />{" "}
+              150 days . . . AED 75,000
+            </p>
+          </div>
+          <div className="bg-primary border rounded shadow-lg mx-auto w-full p-4">
+            <p className="text-lg text-white w-full">
+              <RiCheckboxCircleFill className="inline text-white text-2xl relative bottom-[2px] mr-2" />{" "}
+              180 days . . . AED 1,00,000
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div>
         <h2
-          className="text-center lg:text-7xl text-5xl font-semibold mt-32 mb-16 text-gray-800"
+          className="text-center lg:text-7xl text-5xl font-semibold mt-20 mb-16 text-gray-800"
           style={{ fontFamily: "Alata" }}
         >
           Image <span className="text-primary">Gallery</span>
@@ -209,8 +262,8 @@ const Property1 = () => {
               Watch Video!
             </h1>
             <p className="py-6">
-              Best deal to buy townhouse land with a down payment and build a
-              house
+              Residential villa plot in the fast-developing area of Al Bahia at
+              a reasonable price
             </p>
             <button
               onClick={() => setOpen(true)}
@@ -234,4 +287,4 @@ const Property1 = () => {
   );
 };
 
-export default Property1;
+export default Property2;

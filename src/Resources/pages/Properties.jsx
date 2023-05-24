@@ -138,9 +138,12 @@ const Properties = () => {
               </div>
             </div>
             <div className="card-actions justify-center mt-10">
-              <button className="btn btn-primary text-white w-full capitalize">
+              <Link
+                to="/properties-residential-villa-plot-in-the-fast-developing-area-of-al-bahia-at-a-reasonable-price"
+                className="btn btn-primary text-white w-full capitalize"
+              >
                 Learn More <ImArrowRight2 className="ml-2" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
