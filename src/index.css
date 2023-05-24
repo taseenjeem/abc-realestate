@@ -9,3 +9,16 @@ body {
 a.active {
   background-color: #0b37fa;
 }
+
+/* Image gallery paly and full screen button */
+button.image-gallery-icon.image-gallery-play-button {
+  background-color: #0000005c;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+button.image-gallery-icon.image-gallery-fullscreen-button {
+  background-color: #0000005c;
+  border-radius: 50px;
+  margin-right: 10px;
+}

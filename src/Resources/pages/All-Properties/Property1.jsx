@@ -2,6 +2,41 @@ import { ImPriceTags } from "react-icons/im";
 import property1 from "../../assets/images/01.webp";
 import { MdCategory } from "react-icons/md";
 import { RiPieChart2Fill, RiCheckboxCircleFill } from "react-icons/ri";
+import "react-image-gallery/styles/scss/image-gallery.scss";
+import ImageGallery from "react-image-gallery";
+import img1 from "../../assets/images/Property1/05.webp";
+import img2 from "../../assets/images/Property1/07.webp";
+import img3 from "../../assets/images/Property1/11.webp";
+import img4 from "../../assets/images/Property1/12.webp";
+import img5 from "../../assets/images/Property1/16.webp";
+import img6 from "../../assets/images/Property1/17.webp";
+
+const images = [
+  {
+    original: `${img1}`,
+    thumbnail: `${img1}`,
+  },
+  {
+    original: `${img2}`,
+    thumbnail: `${img2}`,
+  },
+  {
+    original: `${img3}`,
+    thumbnail: `${img3}`,
+  },
+  {
+    original: `${img4}`,
+    thumbnail: `${img4}`,
+  },
+  {
+    original: `${img5}`,
+    thumbnail: `${img5}`,
+  },
+  {
+    original: `${img6}`,
+    thumbnail: `${img6}`,
+  },
+];
 
 const Property1 = () => {
   return (
@@ -144,6 +179,19 @@ const Property1 = () => {
               2-minute drive to Shaikh Mohammed Bin Zayed road
             </p>
           </div>
+        </div>
+      </div>
+
+      <div>
+        <h2
+          className="text-center lg:text-7xl text-5xl font-semibold mt-20 mb-20 text-gray-800"
+          style={{ fontFamily: "Alata" }}
+        >
+          Image <span className="text-primary">Gallery</span>
+        </h2>
+
+        <div>
+          <ImageGallery items={images} />
         </div>
       </div>
     </section>
