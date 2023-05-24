@@ -10,6 +10,10 @@ import img3 from "../../assets/images/Property1/11.webp";
 import img4 from "../../assets/images/Property1/12.webp";
 import img5 from "../../assets/images/Property1/16.webp";
 import img6 from "../../assets/images/Property1/17.webp";
+import { FaRegPlayCircle } from "react-icons/fa";
+import React, { useState } from "react";
+import ModalVideo from "react-modal-video";
+import "react-modal-video/css/modal-video.min.css";
 
 const images = [
   {
@@ -39,6 +43,8 @@ const images = [
 ];
 
 const Property1 = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <section>
       <div
@@ -104,7 +110,7 @@ const Property1 = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 lg:px-0 my-10">
+      <div className="mx-auto max-w-7xl px-4 lg:px-0 my-10 min-h-screen">
         <h1
           className="text-center lg:text-7xl text-5xl font-semibold mt-20 mb-20 text-gray-800"
           style={{ fontFamily: "Alata" }}
@@ -192,6 +198,36 @@ const Property1 = () => {
 
         <div>
           <ImageGallery items={images} />
+        </div>
+      </div>
+
+      <div className="hero my-24">
+        <div className="hero-content gap-10 flex-col lg:flex-row">
+          <img src={property1} className="max-w-2xl rounded-lg shadow-2xl" />
+          <div>
+            <h1 className="text-5xl font-bold" style={{ fontFamily: "Alata" }}>
+              Watch Video!
+            </h1>
+            <p className="py-6">
+              Best deal to buy townhouse land with a down payment and build a
+              house
+            </p>
+            <button
+              onClick={() => setOpen(true)}
+              className="btn btn-primary text-white capitalize"
+            >
+              Play Video <FaRegPlayCircle className="text-xl ml-2" />
+            </button>
+          </div>
+          <React.Fragment>
+            <ModalVideo
+              channel="youtube"
+              autoplay
+              isOpen={isOpen}
+              videoId="FnZ2oDkLbLE"
+              onClose={() => setOpen(false)}
+            />
+          </React.Fragment>
         </div>
       </div>
     </section>
