@@ -11,6 +11,7 @@ import ScrollToTop from "./Resources/Hooks/ScrollToTop";
 import Property1 from "./Resources/pages/All-Properties/Property1";
 import Property2 from "./Resources/pages/All-Properties/Property2";
 import Property3 from "./Resources/pages/All-Properties/Property3";
+import Property4 from "./Resources/pages/All-Properties/Property4";
 
 function App() {
   return (
@@ -44,6 +45,10 @@ function App() {
           <Route
             path="/properties-hurry-up-6-months-payment-plan-residential-plot-in-al-bahia-ajman"
             element={<Property3 />}
+          />
+          <Route
+            path="/properties-residential-plots-for-sale-in-al-bahia-in-6-months-installment"
+            element={<Property4 />}
           />
         </Routes>
       </ScrollToTop>
