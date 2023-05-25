@@ -12,12 +12,18 @@ const ContactBanner = () => {
       <div className="hero-content text-center text-white">
         <div className="max-w-3xl">
           <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
             className="mb-5 lg:text-7xl text-5xl font-bold capitalize"
             style={{ fontFamily: "Alata" }}
           >
             How can we help you?
           </h1>
-          <p className="mb-5 text-lg">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="mb-5 text-lg"
+          >
             If you have any queries for us, please do not hesitate to ask.
             Please feel free to contact us using the following procedures.
           </p>

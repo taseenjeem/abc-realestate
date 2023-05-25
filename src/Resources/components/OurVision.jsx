@@ -2,7 +2,7 @@ import img from "../assets/images/Business vision-pana.svg";
 
 const OurVision = () => {
   return (
-    <div className="hero">
+    <div data-aos="fade-up" data-aos-duration="1000" className="hero">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={img} className="max-w-xl rounded-lg drop-shadow-2xl" />
         <div>

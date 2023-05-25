@@ -5,7 +5,11 @@ import "../CSS/ContactDetails.css";
 const ContactDetails = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 lg:px-0 my-24">
-      <div className="flex lg:flex-row flex-col justify-evenly items-center gap-10 md:gap-0">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="flex lg:flex-row flex-col justify-evenly items-center gap-10 md:gap-0"
+      >
         <div>
           <div className="bg-gray-50 p-5 border rounded shadow-md flex items-center">
             <SlLocationPin className="text-6xl" />

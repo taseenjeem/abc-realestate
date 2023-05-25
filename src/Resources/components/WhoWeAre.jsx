@@ -8,12 +8,18 @@ const WhoWeAre = () => {
         style={{ backgroundImage: `url(${bg})` }}
       >
         <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="text-center text-7xl font-semibold mb-10 text-gray-800"
           style={{ fontFamily: "Alata" }}
         >
           <span className="text-primary">Who</span> We Are
         </h1>
-        <div className="max-w-6xl mx-auto bg-transparent backdrop-blur-3xl p-5 rounded">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="max-w-6xl mx-auto bg-transparent backdrop-blur-3xl p-5 rounded"
+        >
           <p className="text-center lg:leading-relaxed">
             ABC Real Estate LLC is a reputable real estate company in Ajman,
             UAE. We specialize in buying, selling, and renting commercial and

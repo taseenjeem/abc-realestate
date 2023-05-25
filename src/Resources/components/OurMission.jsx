@@ -2,7 +2,11 @@ import img from "../assets/images/Business mission-pana.svg";
 
 const OurMission = () => {
   return (
-    <div className="hero min-h-screen">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="hero min-h-screen"
+    >
       <div className="hero-content flex-col lg:flex-row">
         <img src={img} className="max-w-xl rounded-lg drop-shadow-2xl" />
         <div>

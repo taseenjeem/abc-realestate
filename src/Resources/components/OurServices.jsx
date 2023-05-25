@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 const OurServices = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 lg:px-0 my-20">
-      <div className="w-full bg-white border rounded shadow-2xl p-10">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="w-full bg-white border rounded shadow-2xl p-10"
+      >
         <h1
           className="text-center lg:text-7xl text-5xl font-semibold mb-10 text-gray-800"
           style={{ fontFamily: "Alata" }}

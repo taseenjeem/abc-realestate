@@ -9,7 +9,7 @@ const AboutService = () => {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="grid lg:grid-cols-2 mx-auto max-w-7xl">
-        <div className="mx-auto">
+        <div data-aos="fade-up" data-aos-duration="1000" className="mx-auto">
           <h1
             className="md:text-7xl text-5xl font-semibold mt-32 mb-10 text-white"
             style={{ fontFamily: "Alata" }}

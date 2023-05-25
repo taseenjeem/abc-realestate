@@ -26,7 +26,11 @@ const HeroCarousel = () => {
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
             <div className="hero-content text-center text-white">
-              <div className="max-w-6xl">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                className="max-w-6xl"
+              >
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
                   Residential villa plot in the fast-developing area of Al Bahia
                   at a reasonable price.
@@ -45,7 +49,11 @@ const HeroCarousel = () => {
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
             <div className="hero-content text-center text-white">
-              <div className="max-w-6xl">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                className="max-w-6xl"
+              >
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
                   Residential plots for sale in Al Bahia in 6 months installment
                 </p>
@@ -63,7 +71,11 @@ const HeroCarousel = () => {
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
             <div className="hero-content text-center text-white">
-              <div className="max-w-6xl">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                className="max-w-6xl"
+              >
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
                   Best deal to buy townhouse land with a down payment and build
                   a house
@@ -82,7 +94,11 @@ const HeroCarousel = () => {
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
             <div className="hero-content text-center text-white">
-              <div className="max-w-6xl">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                className="max-w-6xl"
+              >
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
                   Hurry up 6 Months payment Plan Residential Plot in Al Bahia
                   Ajman

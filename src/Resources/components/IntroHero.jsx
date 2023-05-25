@@ -4,7 +4,11 @@ import { ImArrowRight2 } from "react-icons/im";
 
 const IntroHero = () => {
   return (
-    <div className="hero min-h-screen">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="hero min-h-screen"
+    >
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={image} className="md:max-w-xl rounded-lg shadow-2xl" />
         <div>

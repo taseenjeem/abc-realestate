@@ -11,6 +11,8 @@ const AvailableProperties = () => {
   return (
     <section className="min-h-screen px-4 md:px-0">
       <h1
+        data-aos="fade-up"
+        data-aos-duration="1000"
         className="text-center text-7xl font-semibold mt-32 mb-10 text-gray-800"
         style={{ fontFamily: "Alata" }}
       >
@@ -18,7 +20,11 @@ const AvailableProperties = () => {
       </h1>
 
       <div className="grid lg:grid-cols-2">
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl"
+        >
           <figure>
             <img src={img1} alt="Shoes" />
           </figure>
@@ -80,7 +86,11 @@ const AvailableProperties = () => {
           </div>
         </div>
 
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl"
+        >
           <figure>
             <img src={img2} alt="Shoes" />
           </figure>
@@ -142,7 +152,11 @@ const AvailableProperties = () => {
           </div>
         </div>
 
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl"
+        >
           <figure>
             <img src={img3} alt="Shoes" />
           </figure>
@@ -203,7 +217,11 @@ const AvailableProperties = () => {
           </div>
         </div>
 
-        <div className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card card-compact mt-16 max-w-lg mx-auto bg-base-100 border shadow-2xl"
+        >
           <figure>
             <img src={img4} alt="Shoes" />
           </figure>
@@ -265,7 +283,11 @@ const AvailableProperties = () => {
         </div>
       </div>
 
-      <div className="card-actions justify-center mt-20">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="card-actions justify-center mt-20"
+      >
         <Link
           to="/properties"
           className="btn btn-primary text-white capitalize"

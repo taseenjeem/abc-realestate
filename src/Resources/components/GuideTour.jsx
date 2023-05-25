@@ -16,6 +16,8 @@ const GuideTour = () => {
   return (
     <section className="min-h-screen px-4 md:px-0">
       <h1
+        data-aos="fade-up"
+        data-aos-duration="1000"
         className="text-center text-7xl font-semibold mt-32 mb-10 text-gray-800"
         style={{ fontFamily: "Alata" }}
       >
@@ -23,7 +25,11 @@ const GuideTour = () => {
       </h1>
 
       <div className="grid lg:grid-cols-2">
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+        >
           <figure className="px-10 pt-10">
             <img src={img1} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -54,7 +60,11 @@ const GuideTour = () => {
           </div>
         </div>
 
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+        >
           <figure className="px-10 pt-10">
             <img src={img2} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -86,7 +96,11 @@ const GuideTour = () => {
           </div>
         </div>
 
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+        >
           <figure className="px-10 pt-10">
             <img src={img3} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -117,7 +131,11 @@ const GuideTour = () => {
           </div>
         </div>
 
-        <div className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+        >
           <figure className="px-10 pt-10">
             <img src={img4} alt="Shoes" className="rounded-xl" />
           </figure>
