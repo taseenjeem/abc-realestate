@@ -1,4 +1,5 @@
 import { ImArrowRight2 } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 const OurServices = () => {
   return (
@@ -24,9 +25,12 @@ const OurServices = () => {
           they achieve their real estate goals with ease and convenience.
         </p>
         <div className="card-actions justify-center mt-10">
-          <button className="btn btn-primary text-white capitalize">
+          <Link
+            to="/contact-us"
+            className="btn btn-primary text-white capitalize"
+          >
             Get Consultancy <ImArrowRight2 className="ml-2" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

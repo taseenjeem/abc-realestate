@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper";
 // import CSS
 import "../CSS/HeroCarousel.css";
+import { Link } from "react-router-dom";
+import { ImArrowRight2 } from "react-icons/im";
 // Initialization for ES Users
 
 const HeroCarousel = () => {
@@ -23,15 +25,18 @@ const HeroCarousel = () => {
         <SwiperSlide className="h-screen carousel-img-1 bg-no-repeat bg-cover bg-center">
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-center text-white">
               <div className="max-w-6xl">
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
                   Residential villa plot in the fast-developing area of Al Bahia
                   at a reasonable price.
                 </p>
-                <button className="btn btn-primary capitalize text-white">
-                  Learn More
-                </button>
+                <Link
+                  to="/properties-residential-villa-plot-in-the-fast-developing-area-of-al-bahia-at-a-reasonable-price"
+                  className="btn btn-primary capitalize text-white"
+                >
+                  Learn More <ImArrowRight2 className="ml-2" />
+                </Link>
               </div>
             </div>
           </div>
@@ -39,15 +44,17 @@ const HeroCarousel = () => {
         <SwiperSlide className="h-screen carousel-img-2 bg-no-repeat bg-cover bg-center">
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-center text-white">
               <div className="max-w-6xl">
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
-                  Best deal to buy townhouse land with a down payment and build
-                  a house
+                  Residential plots for sale in Al Bahia in 6 months installment
                 </p>
-                <button className="btn btn-primary capitalize text-white">
-                  Learn More
-                </button>
+                <Link
+                  to="/properties-residential-plots-for-sale-in-al-bahia-in-6-months-installment"
+                  className="btn btn-primary capitalize text-white"
+                >
+                  Learn More <ImArrowRight2 className="ml-2" />
+                </Link>
               </div>
             </div>
           </div>
@@ -55,14 +62,18 @@ const HeroCarousel = () => {
         <SwiperSlide className="h-screen carousel-img-3 bg-no-repeat bg-cover bg-center">
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-center text-white">
               <div className="max-w-6xl">
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
-                  Residential plots for sale in Al Bahia in 6 months installment
+                  Best deal to buy townhouse land with a down payment and build
+                  a house
                 </p>
-                <button className="btn btn-primary capitalize text-white">
-                  Learn More
-                </button>
+                <Link
+                  to="/properties-buy-townhouse-land-with-a-down-payment-and-build-a-house"
+                  className="btn btn-primary capitalize text-white"
+                >
+                  Learn More <ImArrowRight2 className="ml-2" />
+                </Link>
               </div>
             </div>
           </div>
@@ -70,15 +81,18 @@ const HeroCarousel = () => {
         <SwiperSlide className="h-screen carousel-img-4 bg-no-repeat bg-cover bg-center">
           <div className="hero min-h-screen">
             <div className="hero-overlay-custom bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-center text-white">
               <div className="max-w-6xl">
                 <p className="mb-5 lg:text-5xl text-3xl font-semibold lg:leading-normal">
                   Hurry up 6 Months payment Plan Residential Plot in Al Bahia
                   Ajman
                 </p>
-                <button className="btn btn-primary capitalize text-white">
-                  Learn More
-                </button>
+                <Link
+                  to="/properties-hurry-up-6-months-payment-plan-residential-plot-in-al-bahia-ajman"
+                  className="btn btn-primary capitalize text-white"
+                >
+                  Learn More <ImArrowRight2 className="ml-2" />
+                </Link>
               </div>
             </div>
           </div>
