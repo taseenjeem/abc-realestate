@@ -14,159 +14,167 @@ const GuideTour = () => {
   const [isOpen4, setOpen4] = useState(false);
 
   return (
-    <section className="min-h-screen px-4 md:px-0">
-      <h1
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        className="text-center text-7xl font-semibold mt-32 mb-10 text-gray-800"
-        style={{ fontFamily: "Alata" }}
-      >
-        Guided <span className="text-primary">Tour</span>
-      </h1>
+    <>
+      {/* Video 1 */}
+      <React.Fragment>
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen1}
+          videoId="FnZ2oDkLbLE"
+          onClose={() => setOpen1(false)}
+        />
+      </React.Fragment>
+      {/* Video 2 */}
+      <React.Fragment>
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen2}
+          videoId="FnZ2oDkLbLE"
+          onClose={() => setOpen2(false)}
+        />
+      </React.Fragment>
+      {/* Video 3 */}
+      <React.Fragment>
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen3}
+          videoId="FnZ2oDkLbLE"
+          onClose={() => setOpen3(false)}
+        />
+      </React.Fragment>
+      {/* Video 4 */}
+      <React.Fragment>
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen4}
+          videoId="FnZ2oDkLbLE"
+          onClose={() => setOpen4(false)}
+        />
+      </React.Fragment>
 
-      <div className="grid lg:grid-cols-2">
-        <div
+      <section className="min-h-screen px-4 md:px-0">
+        <h1
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+          className="text-center text-7xl font-semibold mt-32 mb-10 text-gray-800"
+          style={{ fontFamily: "Alata" }}
         >
-          <figure className="px-10 pt-10">
-            <img src={img1} alt="Shoes" className="rounded-xl" />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
-              style={{ fontFamily: "Alata" }}
-            >
-              Buy townhouse land with a down payment and build a house
-            </h2>
-            <div className="card-actions justify-center mt-5">
-              <button
-                onClick={() => setOpen1(true)}
-                className="btn btn-primary capitalize w-full text-white"
-              >
-                Watch Video <FaRegPlayCircle className="text-xl ml-2" />
-              </button>
-            </div>
-            <React.Fragment>
-              <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen1}
-                videoId="FnZ2oDkLbLE"
-                onClose={() => setOpen1(false)}
-              />
-            </React.Fragment>
-          </div>
-        </div>
+          Guided <span className="text-primary">Tour</span>
+        </h1>
 
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
-        >
-          <figure className="px-10 pt-10">
-            <img src={img2} alt="Shoes" className="rounded-xl" />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
-              style={{ fontFamily: "Alata" }}
-            >
-              Residential villa plot in the fast-developing area of Al Bahia at
-              a reasonable price
-            </h2>
-            <div className="card-actions justify-center mt-5">
-              <button
-                onClick={() => setOpen2(true)}
-                className="btn btn-primary capitalize w-full text-white"
+        <div className="grid lg:grid-cols-2">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+          >
+            <figure className="px-10 pt-10">
+              <img src={img1} alt="Shoes" className="rounded-xl" />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2
+                className="text-2xl font-semibold text-gray-800 text-center"
+                style={{ fontFamily: "Alata" }}
               >
-                Watch Video <FaRegPlayCircle className="text-xl ml-2" />
-              </button>
+                Buy townhouse land with a down payment and build a house
+              </h2>
+              <div className="card-actions justify-center mt-5">
+                <button
+                  onClick={() => setOpen1(true)}
+                  className="btn btn-primary capitalize w-full text-white"
+                >
+                  Watch Video <FaRegPlayCircle className="text-xl ml-2" />
+                </button>
+              </div>
             </div>
-            <React.Fragment>
-              <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen2}
-                videoId="FnZ2oDkLbLE"
-                onClose={() => setOpen2(false)}
-              />
-            </React.Fragment>
           </div>
-        </div>
 
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
-        >
-          <figure className="px-10 pt-10">
-            <img src={img3} alt="Shoes" className="rounded-xl" />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
-              style={{ fontFamily: "Alata" }}
-            >
-              Hurry up 6 Months payment plan residential plot in Al Bahia Ajman
-            </h2>
-            <div className="card-actions justify-center mt-5">
-              <button
-                onClick={() => setOpen3(true)}
-                className="btn btn-primary capitalize w-full text-white"
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+          >
+            <figure className="px-10 pt-10">
+              <img src={img2} alt="Shoes" className="rounded-xl" />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2
+                className="text-2xl font-semibold text-gray-800 text-center"
+                style={{ fontFamily: "Alata" }}
               >
-                Watch Video <FaRegPlayCircle className="text-xl ml-2" />
-              </button>
+                Residential villa plot in the fast-developing area of Al Bahia
+                at a reasonable price
+              </h2>
+              <div className="card-actions justify-center mt-5">
+                <button
+                  onClick={() => setOpen2(true)}
+                  className="btn btn-primary capitalize w-full text-white"
+                >
+                  Watch Video <FaRegPlayCircle className="text-xl ml-2" />
+                </button>
+              </div>
             </div>
-            <React.Fragment>
-              <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen3}
-                videoId="FnZ2oDkLbLE"
-                onClose={() => setOpen3(false)}
-              />
-            </React.Fragment>
           </div>
-        </div>
 
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
-        >
-          <figure className="px-10 pt-10">
-            <img src={img4} alt="Shoes" className="rounded-xl" />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
-              style={{ fontFamily: "Alata" }}
-            >
-              Residential plots for sale in Al Bahia in 6 months installment
-            </h2>
-            <div className="card-actions justify-center mt-5">
-              <button
-                onClick={() => setOpen4(true)}
-                className="btn btn-primary capitalize w-full text-white"
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+          >
+            <figure className="px-10 pt-10">
+              <img src={img3} alt="Shoes" className="rounded-xl" />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2
+                className="text-2xl font-semibold text-gray-800 text-center"
+                style={{ fontFamily: "Alata" }}
               >
-                Watch Video <FaRegPlayCircle className="text-xl ml-2" />
-              </button>
+                Hurry up 6 Months payment plan residential plot in Al Bahia
+                Ajman
+              </h2>
+              <div className="card-actions justify-center mt-5">
+                <button
+                  onClick={() => setOpen3(true)}
+                  className="btn btn-primary capitalize w-full text-white"
+                >
+                  Watch Video <FaRegPlayCircle className="text-xl ml-2" />
+                </button>
+              </div>
             </div>
-            <React.Fragment>
-              <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen4}
-                videoId="FnZ2oDkLbLE"
-                onClose={() => setOpen4(false)}
-              />
-            </React.Fragment>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="card max-w-lg mx-auto mt-16 bg-base-100 border shadow-2xl"
+          >
+            <figure className="px-10 pt-10">
+              <img src={img4} alt="Shoes" className="rounded-xl" />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2
+                className="text-2xl font-semibold text-gray-800 text-center"
+                style={{ fontFamily: "Alata" }}
+              >
+                Residential plots for sale in Al Bahia in 6 months installment
+              </h2>
+              <div className="card-actions justify-center mt-5">
+                <button
+                  onClick={() => setOpen4(true)}
+                  className="btn btn-primary capitalize w-full text-white"
+                >
+                  Watch Video <FaRegPlayCircle className="text-xl ml-2" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
