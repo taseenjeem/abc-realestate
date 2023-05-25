@@ -4,7 +4,7 @@ const WhoWeAre = () => {
   return (
     <section>
       <div
-        className="w-full min-h-screen bg-no-repeat bg-cover bg-center bg-fixed px-4 lg:px-0 pt-28"
+        className="w-full min-h-screen bg-no-repeat bg-cover bg-center bg-fixed px-4 pb-16 md:pb-0 lg:px-0 pt-28"
         style={{ backgroundImage: `url(${bg})` }}
       >
         <h1

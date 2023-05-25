@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AboutService = () => {
   return (
     <section
-      className="w-full min-h-screen bg-no-repeat bg-cover px-4 lg:px-0"
+      className="w-full min-h-screen bg-no-repeat bg-cover px-4 pb-16 md:pb-0 lg:px-0"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="grid lg:grid-cols-2 mx-auto max-w-7xl">
