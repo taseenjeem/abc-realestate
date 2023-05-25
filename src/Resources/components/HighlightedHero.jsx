@@ -19,7 +19,7 @@ const HighlightedHero = () => {
             height: 500,
           }}
         />
-        <div className="container mx-auto px-6 md:px-12 xl:px-32">
+        <div className="container mx-auto px-6 md:px-12 xl:px-32 z-50">
           <div className="text-center text-gray-800">
             <div
               className="block rounded-lg shadow-2xl px-6 py-12 md:py-16 md:px-12"

@@ -20,7 +20,7 @@ AOS.init({ once: true });
 function App() {
   return (
     <section
-      className="overflow-hidden bg-no-repeat bg-cover bg-fixed"
+      className="overflow-hidden bg-no-repeat bg-cover bg-center md:bg-fixed"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <a href="https://wa.me/+971555147420?text=">
