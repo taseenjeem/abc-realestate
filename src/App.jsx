@@ -12,6 +12,7 @@ import Property1 from "./Resources/pages/All-Properties/Property1";
 import Property2 from "./Resources/pages/All-Properties/Property2";
 import Property3 from "./Resources/pages/All-Properties/Property3";
 import Property4 from "./Resources/pages/All-Properties/Property4";
+import InvalidPage from "./Resources/pages/InvalidPage";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/properties" element={<Properties />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="*" element={<InvalidPage />} />
           <Route
             path="/properties-buy-townhouse-land-with-a-down-payment-and-build-a-house"
             element={<Property1 />}
