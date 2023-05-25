@@ -79,9 +79,12 @@ const AvailableProperties = () => {
               </div>
             </div>
             <div className="card-actions justify-center mt-10">
-              <button className="btn btn-primary text-white w-full capitalize">
+              <Link
+                to="/properties-buy-townhouse-land-with-a-down-payment-and-build-a-house"
+                className="btn btn-primary text-white w-full capitalize"
+              >
                 Learn More <ImArrowRight2 className="ml-2" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -145,9 +148,12 @@ const AvailableProperties = () => {
               </div>
             </div>
             <div className="card-actions justify-center mt-10">
-              <button className="btn btn-primary text-white w-full capitalize">
+              <Link
+                to="/properties-residential-villa-plot-in-the-fast-developing-area-of-al-bahia-at-a-reasonable-price"
+                className="btn btn-primary text-white w-full capitalize"
+              >
                 Learn More <ImArrowRight2 className="ml-2" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -210,9 +216,12 @@ const AvailableProperties = () => {
               </div>
             </div>
             <div className="card-actions justify-center mt-10">
-              <button className="btn btn-primary text-white w-full capitalize">
+              <Link
+                to="/properties-hurry-up-6-months-payment-plan-residential-plot-in-al-bahia-ajman"
+                className="btn btn-primary text-white w-full capitalize"
+              >
                 Learn More <ImArrowRight2 className="ml-2" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -275,9 +284,12 @@ const AvailableProperties = () => {
               </div>
             </div>
             <div className="card-actions justify-center mt-10">
-              <button className="btn btn-primary text-white w-full capitalize">
+              <Link
+                to="/properties-residential-plots-for-sale-in-al-bahia-in-6-months-installment"
+                className="btn btn-primary text-white w-full capitalize"
+              >
                 Learn More <ImArrowRight2 className="ml-2" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
