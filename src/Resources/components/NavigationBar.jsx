@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/icons/300.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,16 +25,16 @@ const NavigationBar = () => {
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal ">
             <li className="mx-2">
-              <Link to="/home">Home</Link>
+              <NavLink to="/home">Home</NavLink>
             </li>
             <li className="mx-2">
-              <Link to="/about-us">About</Link>
+              <NavLink to="/about-us">About</NavLink>
             </li>
             <li className="mx-2">
-              <Link to="/properties">Properties</Link>
+              <NavLink to="/properties">Properties</NavLink>
             </li>
             <li className="ml-2">
-              <Link to="/contact-us">Contact</Link>
+              <NavLink to="/contact-us">Contact</NavLink>
             </li>
           </ul>
         </div>
@@ -66,16 +66,16 @@ const NavigationBar = () => {
             }`}
           >
             <li className="mx-2" onClick={handleMenuItemClick}>
-              <Link to="/home">Home</Link>
+              <NavLink to="/home">Home</NavLink>
             </li>
             <li className="mx-2" onClick={handleMenuItemClick}>
-              <Link to="/about-us">About</Link>
+              <NavLink to="/about-us">About</NavLink>
             </li>
             <li className="mx-2" onClick={handleMenuItemClick}>
-              <Link to="/properties">Properties</Link>
+              <NavLink to="/properties">Properties</NavLink>
             </li>
             <li className="mx-2" onClick={handleMenuItemClick}>
-              <Link to="/contact-us">Contact</Link>
+              <NavLink to="/contact-us">Contact</NavLink>
             </li>
           </ul>
         </div>

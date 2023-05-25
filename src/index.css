@@ -7,7 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 a.active {
-  background-color: #0b37fa;
+  color: white;
 }
 
 /* Image gallery paly and full screen button */
