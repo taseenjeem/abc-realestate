@@ -1,3 +1,4 @@
+import PageTitle from "../Hooks/PageTitle";
 import AboutService from "../components/AboutService";
 import AvailableProperties from "../components/AvailableProperties";
 import GuideTour from "../components/GuideTour";
@@ -9,6 +10,7 @@ import Team from "../components/Team";
 const LandingPage = () => {
   return (
     <section className="">
+      <PageTitle title="Home" />
       <HeroCarousel />
       <div className="mx-auto max-w-7xl">
         <IntroHero />

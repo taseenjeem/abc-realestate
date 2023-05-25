@@ -6,10 +6,12 @@ import img4 from "../assets/images/04.webp";
 import { ImPriceTags, ImArrowRight2 } from "react-icons/im";
 import { MdCategory } from "react-icons/md";
 import { RiPieChart2Fill } from "react-icons/ri";
+import PageTitle from "../Hooks/PageTitle";
 
 const Properties = () => {
   return (
     <section className="min-h-screen px-4 md:px-0 mx-auto max-w-7xl mb-24">
+      <PageTitle title="Available Properties" />
       <h1
         data-aos="fade-up"
         data-aos-duration="1000"
