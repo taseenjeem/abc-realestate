@@ -19,7 +19,7 @@ const NavigationBar = () => {
       <div className="navbar mx-auto max-w-7xl">
         <div className="navbar-start">
           <Link to="/" className="">
-            <img src={logo} className="w-20" alt="" />
+            <img src={logo} className="lg:w-[100px] w-20 lg:my-2" alt="" />
           </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
@@ -61,7 +61,7 @@ const NavigationBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className={`menu menu-compact dropdown-content mt-5 p-2 shadow bg-base-100 rounded-box w-52 ${
+            className={`menu menu-compact dropdown-content mt-5 p-2 shadow-2xl border bg-base-100 rounded-box w-52 ${
               isOpen ? "block" : "hidden"
             }`}
           >
