@@ -7,7 +7,9 @@ body {
   scroll-behavior: smooth;
 }
 a.active {
-  color: white;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
 }
 
 /* Image gallery paly and full screen button */

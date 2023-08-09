@@ -5,6 +5,7 @@ import { ImLocation2 } from "react-icons/im";
 import { MdPhone, MdMessage } from "react-icons/md";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
+import "../CSS/Navbar.css";
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,8 @@ const NavigationBar = () => {
   return (
     <>
       {/* For large device only */}
-      <nav className="bg-white w-full z-50">
-        <div className="">
+      <section className="bg-white w-full z-50 hidden lg:block">
+        <nav className="">
           <div className="flex justify-around items-center">
             <Link to="/" className="">
               <img src={logo} className="lg:w-[100px] w-20 lg:my-2" alt="" />
@@ -65,8 +66,26 @@ const NavigationBar = () => {
               </Modal>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+        <nav className="sticky-navbar">
+          <div className="flex bg-gradient-to-l from-[#314796] to-[#0CACEA] justify-center">
+            <ul className="menu menu-horizontal my-5 text-white">
+              <li className="mx-2">
+                <NavLink to="/home">Home</NavLink>
+              </li>
+              <li className="mx-2">
+                <NavLink to="/about-us">About</NavLink>
+              </li>
+              <li className="mx-2">
+                <NavLink to="/properties">Properties</NavLink>
+              </li>
+              <li className="ml-2">
+                <NavLink to="/contact-us">Contact</NavLink>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
 
       {/* for mobile devices */}
       <nav className="bg-white fixed w-full top-0 z-50 shadow-lg block lg:hidden">
@@ -76,6 +95,7 @@ const NavigationBar = () => {
               <img src={logo} className="lg:w-[100px] w-20 lg:my-2" alt="" />
             </Link>
           </div>
+
           <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal ">
               <li className="mx-2">
@@ -131,6 +151,13 @@ const NavigationBar = () => {
               <li className="mx-2" onClick={handleMenuItemClick}>
                 <NavLink to="/contact-us">Contact</NavLink>
               </li>
+              <button
+                onClick={onOpenModal}
+                className="btn btn-primary ml-4 text-white capitalize"
+              >
+                <MdMessage className="text-xl mr-2 inline-block" />
+                Get Consultancy
+              </button>
             </ul>
           </div>
         </div>
