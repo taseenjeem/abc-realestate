@@ -116,7 +116,7 @@ const NavigationBar = () => {
         <nav className="sticky-navbar">
           <div className="flex bg-gradient-to-l from-[#314796] to-[#0CACEA] justify-center">
             <ul className="menu menu-horizontal my-5 text-white">
-              <li className="mx-2">
+              <li className="mr-2">
                 <NavLink to="/home">Home</NavLink>
               </li>
               <li className="mx-2">
