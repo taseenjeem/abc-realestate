@@ -30,7 +30,7 @@ const AvailableProperties = () => {
           </figure>
           <div className="card-body">
             <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
+              className="text-2xl  text-gray-800 text-center"
               style={{ fontFamily: "Alata" }}
             >
               Best deal to buy townhouse land with a down payment and build a
@@ -99,7 +99,7 @@ const AvailableProperties = () => {
           </figure>
           <div className="card-body">
             <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
+              className="text-2xl  text-gray-800 text-center"
               style={{ fontFamily: "Alata" }}
             >
               Residential villa plot in the fast-developing area of Al Bahia at
@@ -168,7 +168,7 @@ const AvailableProperties = () => {
           </figure>
           <div className="card-body">
             <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
+              className="text-2xl  text-gray-800 text-center"
               style={{ fontFamily: "Alata" }}
             >
               Hurry up 6 Months payment plan residential plot in Al Bahia Ajman
@@ -236,7 +236,7 @@ const AvailableProperties = () => {
           </figure>
           <div className="card-body">
             <h2
-              className="text-2xl font-semibold text-gray-800 text-center"
+              className="text-2xl  text-gray-800 text-center"
               style={{ fontFamily: "Alata" }}
             >
               Residential plots for sale in Al Bahia in 6 months installment
