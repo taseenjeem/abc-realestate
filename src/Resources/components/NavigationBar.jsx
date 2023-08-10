@@ -100,7 +100,7 @@ const NavigationBar = () => {
                   </div>
                   <input
                     type="submit"
-                    className="btn btn-primary capitalize mt-5 w-full"
+                    className="btn btn-primary capitalize mt-5 w-full text-white"
                     value="Send Massage"
                   />
                 </form>
