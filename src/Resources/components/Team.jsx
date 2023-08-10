@@ -45,7 +45,7 @@ const Team = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="max-w-md w-full p-7 bg-white border shadow-2xl rounded"
+          className="max-w-md w-full p-7 bg-white border shadow-2xl rounded hidden"
         >
           <h2
             className="text-center text-3xl font-semibold"
