@@ -35,20 +35,25 @@ const NavigationBar = () => {
               <img src={logo} className="lg:w-[100px] w-20 lg:my-2" alt="" />
             </Link>
             <div className="flex items-center">
-              <div className="flex items-center">
+              <a
+                href="https://www.google.com/maps/dir//Al+Bahia+Ajman+United+Arab+Emirates/@25.4195821,55.5774025,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ef5f735caddbd15:0xe7172a37a00ee8a9!2m2!1d55.5774025!2d25.4195821?entry=ttu"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center"
+              >
                 <ImLocation2 className="text-5xl text-[#4B6BFB]" />
                 <div>
                   <p className="text-lg font-semibold">Al Bahia</p>
                   <p className="text-sm">Ajman - United Arab Emirates</p>
                 </div>
-              </div>
-              <div className="flex items-center mx-6">
+              </a>
+              <a href="tel:+971555147420" className="flex items-center mx-6">
                 <MdPhone className="text-5xl text-[#4B6BFB]" />
                 <div>
                   <p className="text-lg font-semibold">Contact Us</p>
                   <p className="text-sm">+971 55 514 7420</p>
                 </div>
-              </div>
+              </a>
               <button
                 onClick={onOpenModal}
                 className="btn btn-primary ml-4 text-white capitalize"
