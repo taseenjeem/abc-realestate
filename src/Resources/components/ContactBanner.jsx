@@ -3,7 +3,7 @@ import banner from "../assets/images/contact-bg.jpg";
 const ContactBanner = () => {
   return (
     <div
-      className="hero h-96"
+      className="hero h-96 mt-12 md:mt-0"
       style={{
         backgroundImage: `url(${banner})`,
       }}

@@ -34,7 +34,7 @@ const AboutService = () => {
               to="/contact-us"
               className="btn btn-neutral text-white capitalize"
             >
-              Get Consultancy <ImArrowRight2 className="ml-2" />
+              Contact Us <ImArrowRight2 className="ml-2" />
             </Link>
           </div>
         </div>
