@@ -1,11 +1,8 @@
-.sticky-navbar {
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 0;
-}
-.navbar-sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.gradient-bg {
+  background: rgb(12, 172, 234);
+  background: radial-gradient(
+    circle,
+    rgba(12, 172, 234, 1) 0%,
+    rgba(49, 71, 150, 1) 100%
+  );
 }
