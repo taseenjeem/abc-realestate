@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { stack as Menu } from "react-burger-menu";
 import "../CSS/MobileNavbar.css";
 import menuIcon from "../assets/icons/menu-alt-01-svgrepo-com.svg";
@@ -6,6 +6,8 @@ import { Link, NavLink } from "react-router-dom";
 import { MdMessage } from "react-icons/md";
 import Modal from "react-responsive-modal";
 import logo from "../assets/icons/300.png";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +29,57 @@ const MobileNavbar = () => {
   };
 
   const onCloseModal = () => setOpen(false);
+
+  // loading button of sent massage
+  const [showLoading, setShowLoading] = useState(false);
+
+  // EmailJS Configs
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setShowLoading(true);
+    emailjs
+      .sendForm(
+        "service_9y5jufz",
+        "template_pyx5pji",
+        form.current,
+        "IgolSrE-eHirGqmtH"
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            Swal.fire({
+              icon: "success",
+              title: "Massage Sent Successfully",
+              text: "We have received your message. Your feedback is extremely valuable to us. We will reach out to you as quickly as possible.",
+              confirmButtonColor: "#01a6ea",
+            });
+            setShowLoading(false);
+            onCloseModal();
+          } else {
+            Swal.fire({
+              icon: "error",
+              title: "Massage sent unsuccessfully",
+              text: "We are very sorry for your trouble, something went wrong. Please try again letter",
+              confirmButtonColor: "#01a6ea",
+            });
+            onCloseModal();
+          }
+        },
+        (error) => {
+          if (error) {
+            Swal.fire({
+              icon: "error",
+              title: "Massage sent unsuccessfully",
+              text: "We are very sorry for your trouble, something went wrong. Please try again letter",
+              confirmButtonColor: "#01a6ea",
+            });
+            onCloseModal();
+          }
+        }
+      );
+  };
 
   return (
     <nav className="w-full lg:hidden block h-20 bg-white fixed top-0 z-40">
@@ -76,7 +129,7 @@ const MobileNavbar = () => {
                 Please feel free to contact us using the following form.
               </p>
               <div className="divider"></div>
-              <form action="">
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="md:flex md:gap-5">
                   <div className="form-control w-full max-w-lg mx-auto">
                     <label className="label">
@@ -84,6 +137,7 @@ const MobileNavbar = () => {
                     </label>
                     <input
                       type="text"
+                      name="user_name"
                       required
                       placeholder="Type your name"
                       className="input input-primary input-bordered w-full max-w-lg"
@@ -95,6 +149,7 @@ const MobileNavbar = () => {
                     </label>
                     <input
                       type="email"
+                      name="user_email"
                       required
                       placeholder="Type your email address"
                       className="input input-primary input-bordered w-full max-w-lg"
@@ -107,15 +162,25 @@ const MobileNavbar = () => {
                   </label>
                   <textarea
                     required
+                    name="message"
                     className="textarea textarea-primary textarea-bordered h-24"
                     placeholder="Type your massage"
                   ></textarea>
                 </div>
-                <input
-                  type="submit"
-                  className="btn btn-primary capitalize mt-5 w-full text-white"
-                  value="Send Massage"
-                />
+
+                {!showLoading ? (
+                  <input
+                    type="submit"
+                    className="btn btn-primary capitalize mt-5 w-full text-white"
+                    value="Send Massage"
+                  />
+                ) : (
+                  <input
+                    type="submit"
+                    className="btn btn-primary capitalize btn-disabled mt-5 w-full text-white"
+                    value="Sending Massage..."
+                  />
+                )}
               </form>
             </Modal>
           </span>
