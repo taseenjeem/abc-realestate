@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { MdMessage } from "react-icons/md";
 import Modal from "react-responsive-modal";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const ConsultencyBtn = () => {
   // State managements of consultancy modal
@@ -10,12 +11,15 @@ const ConsultencyBtn = () => {
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
+  // loading button of sent massage
+  const [showLoading, setShowLoading] = useState(false);
+
   // EmailJS Configs
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setShowLoading(true);
     emailjs
       .sendForm(
         "service_9y5jufz",
@@ -25,10 +29,35 @@ const ConsultencyBtn = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          if (result.text === "OK") {
+            Swal.fire({
+              icon: "success",
+              title: "Massage Sent Successfully",
+              text: "We have received your message. Your feedback is extremely valuable to us. We will reach out to you as quickly as possible.",
+              confirmButtonColor: "#01a6ea",
+            });
+            setShowLoading(false);
+            onCloseModal();
+          } else {
+            Swal.fire({
+              icon: "error",
+              title: "Massage sent unsuccessfully",
+              text: "We are very sorry for your trouble, something went wrong. Please try again letter",
+              confirmButtonColor: "#01a6ea",
+            });
+            onCloseModal();
+          }
         },
         (error) => {
-          console.log(error.text);
+          if (error) {
+            Swal.fire({
+              icon: "error",
+              title: "Massage sent unsuccessfully",
+              text: "We are very sorry for your trouble, something went wrong. Please try again letter",
+              confirmButtonColor: "#01a6ea",
+            });
+            onCloseModal();
+          }
         }
       );
   };
@@ -87,11 +116,20 @@ const ConsultencyBtn = () => {
               placeholder="Type your massage"
             ></textarea>
           </div>
-          <input
-            type="submit"
-            className="btn btn-primary capitalize mt-5 w-full text-white"
-            value="Send Massage"
-          />
+
+          {!showLoading ? (
+            <input
+              type="submit"
+              className="btn btn-primary capitalize mt-5 w-full text-white"
+              value="Send Massage"
+            />
+          ) : (
+            <input
+              type="submit"
+              className="btn btn-primary capitalize btn-disabled mt-5 w-full text-white"
+              value="Sending Massage..."
+            />
+          )}
         </form>
       </Modal>
     </>

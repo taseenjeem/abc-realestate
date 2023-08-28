@@ -13,6 +13,7 @@ import Property2 from "./Resources/pages/All-Properties/Property2";
 import Property3 from "./Resources/pages/All-Properties/Property3";
 import Property4 from "./Resources/pages/All-Properties/Property4";
 import InvalidPage from "./Resources/pages/InvalidPage";
+import "sweetalert2/src/sweetalert2.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init({ once: true });
