@@ -11,6 +11,19 @@ a.active {
   background-color: white;
   border-radius: 4px;
 }
+@media (max-width: 768px) {
+  a.active {
+    color: white;
+    background: rgb(30, 53, 135);
+    background: linear-gradient(
+      90deg,
+      rgba(30, 53, 135, 1) 0%,
+      rgba(2, 165, 233, 1) 100%
+    );
+    padding: 10px;
+    border-radius: 4px;
+  }
+}
 
 /* Image gallery paly and full screen button */
 button.image-gallery-icon.image-gallery-play-button {

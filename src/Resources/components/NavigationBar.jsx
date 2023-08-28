@@ -6,18 +6,19 @@ import { MdPhone, MdMessage } from "react-icons/md";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import "../CSS/Navbar.css";
+import MobileNavbar from "./MobileNavbar";
 
 const NavigationBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+  // const handleClick = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-  const handleMenuItemClick = () => {
-    setIsOpen(false);
-    document.getElementById("dropdown-button").focus();
-  };
+  // const handleMenuItemClick = () => {
+  //   setIsOpen(false);
+  //   document.getElementById("dropdown-button").focus();
+  // };
 
   // State managements of consultancy modal
   const [open, setOpen] = useState(false);
@@ -134,7 +135,7 @@ const NavigationBar = () => {
       </section>
 
       {/* for mobile devices */}
-      <nav className="bg-white fixed w-full top-0 z-50 shadow-lg block lg:hidden">
+      {/* <nav className="bg-white fixed w-full top-0 z-50 shadow-lg block lg:hidden">
         <div className="navbar mx-auto max-w-7xl">
           <div className="navbar-start">
             <Link to="/" className="">
@@ -207,7 +208,8 @@ const NavigationBar = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <MobileNavbar />
     </>
   );
 };
