@@ -68,7 +68,7 @@ const NavigationBar = () => {
 
       <nav
         className={`w-full z-50 hidden lg:block ${
-          applyClassName ? "fixed top-0" : ""
+          applyClassName ? "fixed top-0" : "absolute"
         }`}
       >
         <div className="flex gradient-bg justify-center">

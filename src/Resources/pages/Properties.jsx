@@ -10,7 +10,7 @@ import PageTitle from "../Hooks/PageTitle";
 
 const Properties = () => {
   return (
-    <section className="min-h-screen px-4 md:px-0 mx-auto max-w-7xl mb-24">
+    <section className="min-h-screen px-4 md:px-0 mx-auto max-w-7xl mb-24 lg:mt-[150px]">
       <PageTitle title="Available Properties" />
       <h1
         data-aos="fade-up"

@@ -6,7 +6,7 @@ import WhoWeAre from "../components/WhoWeAre";
 
 const About = () => {
   return (
-    <div>
+    <div className="lg:mt-[88px]">
       <PageTitle title="About Us" />
       <WhoWeAre />
       <OurMission />

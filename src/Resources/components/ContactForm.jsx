@@ -56,7 +56,7 @@ const ContactForm = () => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="hero min-h-screen"
+      className="hero min-h-screen mb-24 md:mb-0"
     >
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="lg:text-left">

@@ -9,7 +9,7 @@ import Team from "../components/Team";
 
 const LandingPage = () => {
   return (
-    <section className="">
+    <section className="lg:mt-[88px]">
       <PageTitle title="Home" />
       <HeroCarousel />
       <div className="mx-auto max-w-7xl">

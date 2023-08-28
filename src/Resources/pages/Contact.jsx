@@ -5,7 +5,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="lg:mt-[88px]">
       <PageTitle title="Contact Us" />
       <ContactBanner />
       <ContactDetails />
