@@ -57,6 +57,7 @@ const MobileNavbar = () => {
             });
             setShowLoading(false);
             onCloseModal();
+            e.target.reset();
           } else {
             Swal.fire({
               icon: "error",

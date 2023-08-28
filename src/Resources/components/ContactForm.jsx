@@ -1,4 +1,57 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 const ContactForm = () => {
+  // loading button of sent massage
+  const [showLoading, setShowLoading] = useState(false);
+
+  // EmailJS Configs
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setShowLoading(true);
+    emailjs
+      .sendForm(
+        "service_9y5jufz",
+        "template_pyx5pji",
+        form.current,
+        "IgolSrE-eHirGqmtH"
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            Swal.fire({
+              icon: "success",
+              title: "Massage Sent Successfully",
+              text: "We have received your message. Your feedback is extremely valuable to us. We will reach out to you as quickly as possible.",
+              confirmButtonColor: "#01a6ea",
+            });
+            setShowLoading(false);
+            e.target.reset();
+          } else {
+            Swal.fire({
+              icon: "error",
+              title: "Massage sent unsuccessfully",
+              text: "We are very sorry for your trouble, something went wrong. Please try again letter",
+              confirmButtonColor: "#01a6ea",
+            });
+          }
+        },
+        (error) => {
+          if (error) {
+            Swal.fire({
+              icon: "error",
+              title: "Massage sent unsuccessfully",
+              text: "We are very sorry for your trouble, something went wrong. Please try again letter",
+              confirmButtonColor: "#01a6ea",
+            });
+          }
+        }
+      );
+  };
+
   return (
     <div
       data-aos="fade-up"
@@ -21,7 +74,11 @@ const ContactForm = () => {
             choosing ABC Real Estate LLC. We look forward to hearing from you!
           </p>
         </div>
-        <form className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100 border">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100 border"
+        >
           <div className="card-body">
             <h2 className="text-center text-2xl font-semibold mb-4">
               What&apos;s on your mind?
@@ -33,6 +90,7 @@ const ContactForm = () => {
               <input
                 type="text"
                 required
+                name="user_name"
                 placeholder="Your Full Name"
                 className="input input-primary input-bordered"
               />
@@ -44,6 +102,7 @@ const ContactForm = () => {
               <input
                 type="email"
                 required
+                name="user_email"
                 placeholder="Enter your email"
                 className="input input-primary input-bordered"
               />
@@ -54,15 +113,24 @@ const ContactForm = () => {
               </label>
               <textarea
                 required
+                name="message"
                 className="textarea textarea-primary h-32"
                 placeholder="Share your thoughts"
               ></textarea>
             </div>
-            <input
-              type="submit"
-              value="Sens Massage"
-              className="btn btn-primary capitalize text-white mt-5"
-            />
+            {!showLoading ? (
+              <input
+                type="submit"
+                className="btn btn-primary capitalize mt-5 w-full text-white"
+                value="Send Massage"
+              />
+            ) : (
+              <input
+                type="submit"
+                className="btn btn-primary capitalize btn-disabled mt-5 w-full text-white"
+                value="Sending Massage..."
+              />
+            )}
           </div>
         </form>
       </div>
