@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { MdMessage } from "react-icons/md";
 import Modal from "react-responsive-modal";
+import emailjs from "@emailjs/browser";
 
 const ConsultencyBtn = () => {
   // State managements of consultancy modal
@@ -8,6 +9,29 @@ const ConsultencyBtn = () => {
 
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
+
+  // EmailJS Configs
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9y5jufz",
+        "template_pyx5pji",
+        form.current,
+        "IgolSrE-eHirGqmtH"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <>
@@ -25,7 +49,7 @@ const ConsultencyBtn = () => {
           feel free to contact us using the following form.
         </p>
         <div className="divider"></div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <div className="md:flex md:gap-5">
             <div className="form-control w-full max-w-lg mx-auto">
               <label className="label">
@@ -33,6 +57,7 @@ const ConsultencyBtn = () => {
               </label>
               <input
                 type="text"
+                name="user_name"
                 required
                 placeholder="Type your name"
                 className="input input-primary input-bordered w-full max-w-lg"
@@ -44,6 +69,7 @@ const ConsultencyBtn = () => {
               </label>
               <input
                 type="email"
+                name="user_email"
                 required
                 placeholder="Type your email address"
                 className="input input-primary input-bordered w-full max-w-lg"
@@ -56,6 +82,7 @@ const ConsultencyBtn = () => {
             </label>
             <textarea
               required
+              name="message"
               className="textarea textarea-primary textarea-bordered h-24"
               placeholder="Type your massage"
             ></textarea>
