@@ -6,8 +6,32 @@ import "react-responsive-modal/styles.css";
 import "../CSS/Navbar.css";
 import MobileNavbar from "./MobileNavbar";
 import ConsultencyBtn from "./ConsultencyBtn";
+import { useEffect, useState } from "react";
 
 const NavigationBar = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [applyClassName, setApplyClassName] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+      setScrollPosition(currentPosition);
+
+      if (currentPosition >= 92) {
+        setApplyClassName(true);
+      } else {
+        setApplyClassName(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {/* For large device only */}
@@ -42,7 +66,11 @@ const NavigationBar = () => {
         </div>
       </nav>
 
-      <nav className="sticky top-0 z-50 hidden lg:block">
+      <nav
+        className={`w-full z-50 hidden lg:block ${
+          applyClassName ? "fixed top-0" : ""
+        }`}
+      >
         <div className="flex gradient-bg justify-center">
           <ul className="menu menu-horizontal my-5 text-white">
             <li className="mr-2">
